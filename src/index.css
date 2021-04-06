@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  margin: 100px auto;
+  width: fit-content;
+}
+.item-to-do{
+  margin: 10px 0;
+  border: solid 1px #cecece;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-to-do:hover{
+  cursor: pointer;
+  
+}
+.item-to-do.completed{
+  background-color: #3c743c;
+  /* color: #fff; */
+  text-decoration: line-through;
+}
+.item-to-do .btn-section {
+
+}
+.item-to-do .btn-section .btn-delete:hover {
+  color: red;
+}
+
+input{
+  outline: none;
+}
+
+.count{
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-to-do  .input-todo{
+  border: solid 2px orange;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.add-to-do .submit-todo{
+  border: solid 2px orange;
+  padding: 5px 5px;
+  border-radius: 5px;
+  background-color: orange;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.add-to-do .submit-todo:hover,
+.add-to-do .submit-todo:active{
+  background-color: #fff;
+  color: orange;
+}
